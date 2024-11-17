@@ -513,6 +513,10 @@ height: 40px;
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
+}
+.modal-window:hover .modal-window:focus{
+    fill: #ffffff
 }
 .button-modal-window{
     position: absolute;
@@ -530,12 +534,16 @@ height: 40px;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-modal-window:hover .button-modal-window:focus{
+.button-modal-window:hover{
     background-color: #404bbf;
     border: none;
 }
+.button-modal-window:focus{
+     background-color: #404bbf;
+    border: none;
+}
 .icon-close{
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-close:hover .icon-close:focus{
     fill: #ffffff;
@@ -575,7 +583,7 @@ height: 40px;
 }
 .input-user-name:focus{
     border-color: #4D5AE5;
-    fill: #4D5AE5
+    fill: #4D5AE5;
 }
 .man-icon{
     position: absolute;
@@ -593,6 +601,8 @@ height: 40px;
     color: rgba(46, 47, 66, 0.4);
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
+    padding: 8px 16px;
+    outline: transparent;
     background-color: transparent;
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -620,7 +630,7 @@ height: 40px;
     justify-content: center;
     fill: transparent;
 }
-input[type="checkbox"]:checked+.span-privacy{
+input [type="checkbox"]:checked + span{
     background-color: #404bbf;
     border: none;
     fill: #F4F4FD;
@@ -629,7 +639,7 @@ input[type="checkbox"]:checked+.span-privacy{
     color: #4d5ae5;
 }
 .button-send{
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
     margin-left: 119px;
@@ -646,4 +656,7 @@ input[type="checkbox"]:checked+.span-privacy{
     background-color: #4D5AE5;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-div-comment{
+    margin-bottom: 16px;
 }
