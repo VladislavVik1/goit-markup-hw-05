@@ -678,7 +678,9 @@ p {
 .man-icon:focus {
     fill: #4D5AE5;
 }
-
+.input-user-name:focus .man-icon {
+    fill: #4d5ae5;
+}
 .textarea {
     width: 100%;
     height: 120px;
