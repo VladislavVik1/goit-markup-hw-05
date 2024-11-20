@@ -675,7 +675,6 @@ p {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.man-icon:hover,
 .man-icon:focus {
     fill: #4D5AE5;
 }
@@ -749,11 +748,13 @@ p {
 
 .form-div-comment {
     margin-bottom: 16px;
-}input:focus svg {
+}
+input:focus svg {
     color: #404bbf;
 }
 
-input:checked span {
+input:checked + label > span  {
     background-color: #404BBF;
-    border: none fill:#f4f4fd;
+    border: none 
+    fill: #f4f4fd;
 }
