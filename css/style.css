@@ -771,7 +771,7 @@ input:focus svg {
     color: #404bbf;
 }
  
-.checkbox-input:checked + .label-privacy .span-privacy{
+input.checkbox-input:checked + label.label-privacy span.span-privacy{
     background-color: #404BBF;
     border: none;
     fill: #F4F4FD;
